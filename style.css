@@ -1,0 +1,137 @@
+/*
+ Theme:        Fork Burke
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Sofasurfer
+ Author URI:   http://sofasurfer.org
+ Template:     wp-bootstrap-starter
+ Version:      1.0.2
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  forkburke
+*/
+
+ @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+/*
+font-family: 'IM Fell French Canon', serif;
+font-family: 'Bellefair', serif;
+font-family: 'Scheherazade', serif;
+font-family: 'Rufina', serif;
+*/
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+    font-size: 20px;
+    min-height: 100%;
+    margin-bottom: 80px!important;
+    font-family: 'Lato', sans-serif;
+    border-left: solid 2rem aqua;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    color: #f06595;
+}
+h2{
+    color: #f06595;
+    font-size: 3rem;
+}
+h3{
+    margin-top: 4rem;    
+}
+h3,p{
+    margin-bottom: 2rem;
+}
+a{
+    color: #f06595;
+}
+a:hover{
+    color: aqua;
+}
+
+.fa, .fab{
+    font-size: 8rem;
+    margin-left: 3rem;
+}
+
+footer{
+    margin-top: 4rem;
+}
+
+
+/*
+    Form
+*/
+.wpcf7-form{
+    padding: 6rem 0 4rem 0;
+    background-color: #754ACD;
+    margin-bottom: 3rem;
+}
+
+
+
+.wpcf7-checkbox{
+    border: 0px;
+    padding: 0;
+    margin: 0px;
+    color: white!important;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+.form-check{
+    padding-left: 0px;
+}
+
+.wpcf7-form label{
+    font-size: 1.5rem;
+    color: #f06595!important;
+}
+
+span.wpcf7-list-item{
+    margin: 0px;
+}
+
+input[type="checkbox"]{
+    width: 2rem;
+    height: 1.5rem;
+    margin-left: -5px;
+}
+.wpcf7-form .btn-primary{
+    border: 0px;
+    font-size: 1.5rem;
+    background-color: #f06595;
+
+}
+
+span.wpcf7-not-valid-tip{
+    color: aqua;
+}
+
+div.wpcf7 .ajax-loader{
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+    /*background-image: url('images/spinner.gif');*/
+    background-image: none;
+    width: 0px;
+    height: 0px;
+}
+
+/*
+    List
+*/
+.dl-horizontal dt{
+    white-space: nowrap;
+}
+
+
+
