@@ -487,7 +487,11 @@ blockquote.wp-block-quote p{
     color: #0051D3;
     background-color: #FF6C40;
     padding: 0 15px;
-}
+    text-decoration: none;
+}/*
+.v-sharing a:hover{
+    color: #FF6C40;
+}*/
 
 a.v-share-fb{
     background-color: #6997FF;
