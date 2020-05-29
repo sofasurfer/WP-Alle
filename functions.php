@@ -40,11 +40,24 @@ add_action( 'after_setup_theme', 'writy_setup' );
 
 
 /*
+    list_sharebuttons
+*/
+function list_sharebuttons(){
+    ob_start();
+    get_template_part('template-parts/sharing', 'none');
+    $var = ob_get_contents();
+    ob_end_clean();
+    return $var;
+}
+add_shortcode( 'list_sharebuttons', 'list_sharebuttons' );
+
+
+/*
     List subscribers
 */
 function list_subscriptions( $atts ){
     $args = array(
-      'numberposts' => -1,
+      'posts_per_page' => -1,
       'post_type'   => 'wpcf7s'
     );
 
@@ -53,24 +66,32 @@ function list_subscriptions( $atts ){
 
 
     $subscribers = array();
-    $sub_list = "<table class=\"table table-striped\">";
+    $sub_list .= "<div class=\"v-wide\">";
+    $sub_list .= "<span class=\"v-left\">". __('Unterzeichner*innen','veloallee')."</span>";
+    $sub_list .= "<span class=\"v-right\">".do_shortcode('[count_subscriptions text="Totale: %s"]')."</span>";
+
+    $sub_list .= "<div class=\"table-wrapper-scroll-y my-custom-scrollbar\"><table class=\"v-table\">";
     foreach( $posts as $post ){
+
+        error_log(print_r($p_meta,true));
 
         $p_meta = get_post_meta( $post->ID );
         $p_meta['post_date'] = get_the_date('D j M',$post);
         $p_meta['post_name'] = $p_meta['wpcf7s_posted-your-name'][0];
         $p_meta['post_age'] = $p_meta['wpcf7s_posted-your-age'][0];
+        $p_meta['post_location'] = $p_meta['wpcf7s_posted-your-location'][0];
 
         if( array_key_exists('wpcf7s_posted-checkbox-anonymous', $p_meta) ) {
             $p_meta['post_name'] = preg_replace("/[\S]/", "X", $p_meta['post_name']);
         }
 
-        $sub_list .= "<tr><td>".$p_meta['post_date']."</td>";
-        $sub_list .= "<td>".$p_meta['post_name']." (".$p_meta['post_age'].")</td></tr>";
+        $sub_list .= "<tr><td width=\"33%\">".$p_meta['post_date']."</td>";
+        $sub_list .= "<td width=\"33%\" align=\"center\">".$p_meta['post_name']."</td>";
+        $sub_list .= "<td width=\"33%\" align=\"right\">".$p_meta['post_location']."</td></tr>";
         array_push($subscribers, $p_meta);
 
     }
-    $sub_list .= "</table>";
+    $sub_list .= "</table></div></div>";
 
     // $sub_list .= "<pre>" . print_r($subscribers,true) . "</pre>";
 
@@ -84,16 +105,27 @@ add_shortcode( 'list_subscriptions', 'list_subscriptions' );
 */
 function count_subscriptions( $atts ){
     $args = array(
-      'numberposts' => -1,
+      'posts_per_page' => -1,
       'post_type'   => 'wpcf7s'
     );
 
     $get_posts = new WP_Query;
     $posts = $get_posts->query( $args );
 
-    return "<div class=\"c-counter\">" . sprintf($atts['text'], count($posts) ) . "</div>";
+    return sprintf($atts['text'], count($posts) );
 }
 add_shortcode( 'count_subscriptions', 'count_subscriptions' );
+
+
+/*
+    Get mounth
+*/
+function get_mounth( $atts ){
+    setlocale(LC_TIME, "de_DE");
+
+    return "Juni"; //strftime("%B", time());
+}
+add_shortcode( 'get_mounth', 'get_mounth' );
 
 
 /*

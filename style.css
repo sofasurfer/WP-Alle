@@ -12,7 +12,7 @@
  Text Domain:  veloalle
 */
 
- @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
 /*
@@ -24,41 +24,97 @@ font-family: 'Rufina', serif;
 
 
 html {
-  min-height: 100%;
-  position: relative;
-  padding: 0;
-  margin: 0;
+    min-height: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
 }
 
 body{
+    color: #0051D3;
     overflow-x: hidden;
-    font-size: 20px;
+    font-size: 25px;
     min-height: 100%;
     margin-bottom: 80px!important;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 h1{
-    font-size: 5rem;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    color: #f06595;
+    font-size: 2.4rem;
+    margin:0;
+    padding:0;
+    color: #0051D3;
+    text-align: center;
 }
 h2{
     color: #f06595;
     font-size: 3rem;
     margin-top: 4rem;     
 }
+
+h2.v-t{
+    position:relative;
+    font-size: 2.4rem;
+    color: #0051D3;
+    padding-top: 200px;
+    height: 500px;
+    margin: 0px;
+
+}
+h2.v-t:after{
+    position: absolute;
+    font-size: 20rem;
+    color: #FF6C40;
+    top:-50px;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: -1;
+
+}
+
+h2.v-t.v-t-1:after{
+    content: "1";
+}
+h2.v-t.v-t-2:after{
+    content: "2";
+}
+h2.v-t.v-t-3:after{
+    content: "3";
+}
+h2.v-t.v-t-4:after{
+    content: "4";
+}
+h2.v-t.v-t-5:after{
+    content: "5";
+}
+h2.v-t.v-t-6:after{
+    content: "6";
+}
+h2.v-t.v-t-7:after{
+    content: "7";
+}
+h2.v-t.v-t-8:after{
+    content: "8";
+}
+
 h3{
-    margin-top: 4rem;    
+    /*margin-top: 4rem;    */
+    font-size: 2.4rem;
 }
 h3,p{
     margin-bottom: 2rem;
 }
 a{
-    color: #f06595;
+    color: #0051D3;
+    text-decoration: underline;
 }
 a:hover{
-    color: aqua;
+    color: #FF6C40;
+}
+
+.entry-header{
+    margin-top: -200px;
 }
 
 .fa, .fab{
@@ -67,11 +123,29 @@ a:hover{
 }
 
 footer{
-    margin-top: 4rem;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a{
+    color:#0051D3;
 }
 
 .c-counter{
     font-size: 2rem;
+}
+.v-center{
+    text-align: center;
+    position: relative;
+    z-index: 50;
+}
+
+.v-left{
+    float: left;
+}
+
+.v-right{
+    float: right;
 }
 
  .alignfull{
@@ -112,12 +186,32 @@ footer{
     display: none;
 }
 
+table{
+    color: #0051D3;
+    width: 100%;
+    border:solid 1px #0051D3;  
+}
+table td{
+    color: #0051D3;
+    padding: 5px 10px;
+    line-height: 1.5rem;
+    background-color: none;
+    border-bottom:solid 1px #0051D3;
+}
+
+.table-wrapper-scroll-y{
+    max-height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+    scrollbar-color: #0051D3 white;
+}
+
 /*
     Form
 */
 .wpcf7-form{
-    padding: 6rem 0 4rem 0;
-    background-color: #754ACD;
+    padding: 50px;
+    background-color: #0051D3;
     margin-bottom: 3rem;
 }
 
@@ -136,8 +230,8 @@ footer{
 }
 
 .wpcf7-form label{
-    font-size: 1.5rem;
-    color: #f06595!important;
+    font-size: 1rem;
+    color: #fff!important;
 }
 
 span.wpcf7-list-item{
@@ -147,18 +241,32 @@ span.wpcf7-list-item{
 input[type="checkbox"]{
     width: 2rem;
     height: 1.5rem;
-    margin-left: -5px;
+    margin-left: 30px;
+    display: inline-block;
 }
 .btn.btn-primary,
 .wpcf7-form .btn-primary{
     border: 0px;
     font-size: 1.5rem;
-    background-color: #f06595;
+    color: #0051D3;
+    background-color: #FFD833;
+    border-radius: 0;
+    margin-top: 30px;
+    margin-right: 70px;
+    display: inline-block;
 
 }
 
 span.wpcf7-not-valid-tip{
-    color: aqua;
+    color: #FF6C40;
+}
+
+.wpcf7-validation-errors{
+    border: 2px solid #FF6C40!important;
+}
+.wpcf7-response-output{
+    color: #FF6C40;
+    text-align: center;
 }
 
 div.wpcf7 .ajax-loader{
@@ -171,6 +279,40 @@ div.wpcf7 .ajax-loader{
     height: 0px;
 }
 
+.form-group{
+    text-align: center;
+}
+
+.wpcf7-form-control-wrap{
+    display:  inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.wpcf7-form-control-wrap.your-age{
+    width: 450px;
+}
+
+input.form-control{
+    font-size: 1rem;
+    border-radius: 40px;
+    text-align: center;
+    padding: 35px 20px;
+    color: #0051D3;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+li:before{
+    content: "→";
+    margin-right: 10px;
+}
+
+
+
 /*
     List
 */
@@ -180,27 +322,54 @@ div.wpcf7 .ajax-loader{
 
 .c-lang{
     position: absolute;
-    top: 10px;
-    right: 50px;
+    right: 1.2rem;
+    top: 1.2rem;
 }
 
 .c-lang ul{
     list-style: none;
+    margin:0;
+    padding: 6px 0px;
+    background-color: #E3E3E3;
+    border-radius: 50px;
 }
 
 .c-lang ul li{
     list-style: none;
     display: inline-block;
     text-transform: uppercase;
-    padding: 20px;
-    font-size: 2rem;
+    margin:0;
+    padding:0;
+    z-index: 1;
+    position: relative;
 }
 
+.c-lang ul li:first-child{
+    margin-right: -20px;
+}
+
+.c-lang ul li a{
+    font-size: 1.2rem;
+    color: #0051D3;
+    padding: 10px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    background: #E3E3E3 0% 0% no-repeat padding-box;
+}
+.c-lang ul li a:hover{
+    color: #FF6C40;
+}
+.c-lang ul li.c-active{
+    z-index: 50;
+}
 .c-lang ul li.c-active a{
-    color: aqua;
-    text-decoration: underline;
+    color: white;
+    background: #0051D3 0% 0% no-repeat padding-box;
 }
-
+.c-lang ul li:before{
+    content: "";
+    margin: 0;
+}
 
 .a2a_floating_style{
     top: auto!important;
@@ -219,4 +388,140 @@ div.wpcf7 .ajax-loader{
 }
 
 
+.v-counter{
 
+}
+
+.v-counter .month{
+    color: #FF6C40;
+    font-size: 20rem;
+    letter-spacing: -1.2rem;
+    display: block;
+    margin-left: 1.52rem;
+    margin-top: -8.5rem;
+}
+
+.v-counter .count{
+    color: white;
+    position:absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    padding: 1rem 2.07rem;
+    line-height: 1;
+    background-color: #0051D3;
+}
+.v-counter .count span{
+    display: block;
+    font-size: 2.4rem;
+}
+
+.v-velo{
+    float:right;
+    width: 400px;
+    height: 145px;
+    margin-top: 190px;
+    margin-right: 300px;
+    background-size: 100% 100%;
+    background-image: url('images/bg-velo.png');
+}
+
+
+blockquote.wp-block-quote{
+    color: white;
+    text-align: center;
+    border-left: none;
+    font-size: 2.4rem;
+    background-color: #0051D3;
+    padding: 200px;
+
+    margin-top: 200px;
+
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+
+}
+blockquote.wp-block-quote p{
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.entry-footer{
+    display: none;
+}
+
+.v-2020{
+    position: relative;
+}
+
+.v-2020:after{
+    position: absolute;
+    content: "Beitreten / S’inscrire";
+    top: 50px;
+    left: -150px;
+    padding: 20px 30px;
+    font-size: 1.6rem;
+    color: #0051D3;
+    background-color: #FFD833;
+}
+
+.v-2020:before{
+    position: absolute;
+    content: "2020";
+    top: -295px;
+    right: -185px;
+    color: #FF6C40;
+    font-size: 20rem;
+}
+
+.v-sharing{
+    display: flex;
+    justify-content: center;
+}
+
+.v-sharing a{
+    margin: 15px;
+    font-size: 2.4rem;
+    color: #0051D3;
+    background-color: #FF6C40;
+    padding: 0 15px;
+}
+
+a.v-share-fb{
+    background-color: #6997FF;
+}
+a.v-share-tw{
+    background-color: #69E2FF;
+}
+a.v-share-wa{
+    background-color: #00C152;
+}
+
+
+
+
+
+
+@media only screen and (min-width : 1600px) {
+
+    .v-wide,
+    .wp-block-columns,
+    #wpcf7-f9-p2-o1{
+        margin: 0px -200px;
+    }
+    .wpcf7-form-control-wrap.your-age{
+        width: 560px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+
+    .wp-block-columns{
+        display: block;
+    }
+    .wpcf7-form-control-wrap.your-age {
+        width: 360px;
+    }
+
+}

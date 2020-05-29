@@ -14,20 +14,11 @@
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</div><!-- #content -->
-    <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-	            <div class="col-6">
-	                &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
-
-	            </div><!-- close .site-info -->
-	            <div class="col-6">
-					<div class="sociallinks pull-right">
-					<a target="_blank" title="Facebook" href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-					<a target="_blank" title="Instagram" href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
-					</div>
-				</div>
+	            <div class="col-12">
+	                Layout: <a href="http://structo.ch" target="_blanl">structo.ch</a> / Integration: <a href="http://www.sofasurfer.org" target="_blanl">sofasurfer.org</a>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

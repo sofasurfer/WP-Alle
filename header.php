@@ -20,29 +20,29 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-    <!--header class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-                
-            <nav id="navbar-top" class="navbar navbar-light bg-light">
-                <?php
-                wp_nav_menu(array(
-                'theme_location'  => 'primary',
-                'container'       => 'div',
-                'container_id'    => 'main-nav',
-                'container_class' => '',
-                'menu_id'         => false,
-                'menu_class'      => 'nav nav-pills',
-                'depth'           => 3,
-                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                'walker'          => new wp_bootstrap_navwalker()
-                ));
-                ?>
-            </nav>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="v-counter">
+                        <span class="month"><?= do_shortcode('[get_mounth]'); ?></span>
+                        <div class="count">
+                            <span><?= do_shortcode('[count_subscriptions text="Total: %s"]'); ?></span>
+                            <?= __("Unterzeichner*innen",'veloallee'); ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="v-velo"></div>
+                </div>
+                <div class="c-lang">
+                    <?= do_shortcode('[c_post_languages ulclass="c-meta-lang" ]'); ?>
+                </div>
+            </div>
+        </div>        
+   
         </div>
-    </header-->
-    <div class="c-lang">
-        <?= do_shortcode('[c_post_languages ulclass="c-meta-lang" ]'); ?>
-    </div>
+    </header>
     <div id="content" class="site-content">
         <div class="container">
             <div class="row">
