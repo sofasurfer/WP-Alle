@@ -1,5 +1,5 @@
 <?php
-
+load_theme_textdomain('veloallee', get_stylesheet_directory() . '/languages');
 
 // add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
