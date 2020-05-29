@@ -16,7 +16,7 @@
         if ( is_single() ) :
             the_content();
         else :
-            the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'wp-bootstrap-starter' ) );
+            the_excerpt(  );
         endif;
 
             wp_link_pages( array(
