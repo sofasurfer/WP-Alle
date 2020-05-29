@@ -447,6 +447,13 @@ blockquote.wp-block-quote p{
     line-height: 1;
 }
 
+blockquote.wp-block-quote a{
+    color: white;
+}
+blockquote.wp-block-quote a:hover{
+    color: #FF6C40;
+}
+
 .entry-footer{
     display: none;
 }
