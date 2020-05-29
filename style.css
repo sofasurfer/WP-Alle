@@ -464,6 +464,7 @@ blockquote.wp-block-quote p{
     font-size: 1.6rem;
     color: #0051D3;
     background-color: #FFD833;
+    cursor: pointer;
 }
 
 .v-2020:before{
