@@ -83,6 +83,7 @@ function list_subscriptions( $atts ){
 
         if( array_key_exists('wpcf7s_posted-checkbox-anonymous', $p_meta) ) {
             $p_meta['post_name'] = preg_replace("/[\S]/", "X", $p_meta['post_name']);
+            $p_meta['post_name'] = "Anonymous";
         }
 
         $sub_list .= "<tr><td width=\"33%\">".$p_meta['post_date']."</td>";
