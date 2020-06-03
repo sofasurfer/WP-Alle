@@ -624,7 +624,9 @@ a.v-share-wa{
     .v-left{
         text-align: left!important;
     }
-
+    .c-lang{
+        right: auto;        
+    }
     .c-lang ul{
         display: inline-block;        
     }
@@ -647,6 +649,37 @@ a.v-share-wa{
     }
 
 }
+
+@media only screen and (max-width : 500px) {
+
+    .v-velo{
+        margin-top: -40px;        
+    }
+    .v-counter .month {
+        font-size: 8rem;
+        margin-top: -3.3rem;
+        letter-spacing: -0.3rem;
+    }
+    
+    .v-counter span {
+        left: 0.54rem;
+        top: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .v-counter .count{
+        width: auto;
+        font-size: 0.60rem;
+        padding: 0.3rem 0.3rem;
+        left: 0.89rem;
+        top: 0.4rem;        
+    }
+
+    .v-counter .count span {
+        font-size: 1.4rem;
+    }    
+}
+
 
 
 
