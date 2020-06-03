@@ -29,6 +29,7 @@ html {
     padding: 0;
     margin: 0;
     font-size: 25px;
+    scroll-behavior: smooth;    
 }
 
 body{
@@ -477,8 +478,11 @@ blockquote.wp-block-quote a:hover{
 .v-2020{
     position: relative;
 }
-
-.v-2020:after{
+.v-2020 a{
+    position:relative;
+    display: block;
+}
+.v-2020 a:after{
     position: absolute;
     content: "Beitreten / S’inscrire";
     top: 50px;
@@ -490,13 +494,13 @@ blockquote.wp-block-quote a:hover{
     cursor: pointer;
 }
 
-.v-2020:before{
+.v-2020 a:before{
     position: absolute;
     content: "2020";
-    top: -295px;
-    right: -185px;
+    font-size: 18rem;
+    top: -265px;
+    right: -160px;    
     color: #FF6C40;
-    font-size: 20rem;
 }
 
 .v-sharing{
@@ -527,18 +531,20 @@ a.v-share-wa{
 }
 
 
-
-
-
-
 @media only screen and (min-width : 1600px) {
 
     .v-wide,
     .wp-block-columns,
     div.wpcf7,
+    figure.size-large,
     #wpcf7-f9-p2-o1{
         margin: 0px -200px;
     }
+
+    figure.size-large{
+        margin: 0px -80px;
+    }
+
     .wpcf7-form-control-wrap.your-age{
         width: 560px;
     }
@@ -568,7 +574,27 @@ a.v-share-wa{
     .entry-header{
         margin-top: -200px;
     }
+    .v-2020 a:before{
+        font-size: 20rem;  
+        top: -295px;
+        right: -185px;
+    }
 
+}
+@media only screen and (max-width : 1400px) {
+    
+    figure.size-large{
+        margin: 0px 50px;
+    }
+
+    .v-2020 a:before{
+        font-size: 16rem;
+        top: -236px;
+        right: -90px;        
+    }
+    .v-2020 a:after{
+          left: -100px;
+    }    
 }
 
 @media only screen and (max-width : 1200px) {
@@ -602,7 +628,27 @@ a.v-share-wa{
     }
     .entry-header {
         margin-top: -100px;
-    }    
+    }
+
+
+    figure.size-large{
+        margin: 0px 0px;
+    }
+
+    .v-2020 a:before{
+        font-size: 10rem;
+        top: -147px;
+        right: -90px;       
+    }
+    .v-2020 a:after{
+          left: -100px;
+    } 
+
+    .wpcf7-form-control-wrap.your-age{
+        width: auto;
+    }
+
+
 }
 
 @media only screen and (max-width : 960px) {
@@ -619,6 +665,11 @@ a.v-share-wa{
 
         text-align: center;
 
+    }
+
+    h2.v-t::after{
+        top: 0px;
+        font-size: 16rem;
     }
 
     .v-left{
@@ -649,10 +700,49 @@ a.v-share-wa{
         width:100%;
     }
 
+    .wpcf7 .float-right{
+        float: none!important;
+    }
+    .btn.btn-primary, .wpcf7-form .btn-primary{
+        margin-right: 0px;
+    }
+
+
+    blockquote.wp-block-quote{
+        padding: 100px 50px;
+    }
+
+    .v-sharing{
+        display: block;
+        text-align: center;
+    }
+    .v-sharing a{
+        display: block;
+    }
 }
 
 @media only screen and (max-width : 500px) {
 
+    html,body{
+        overflow-x: hidden;
+    }
+    h1.entry-title{
+        font-size: 1.4rem;
+    }
+    h2.v-t{
+        height: 400px;
+        padding-top: 125px;
+    }
+    h2.v-t::after {
+        top: -50px;
+        font-size: 16rem;
+    }
+    h2.v-t.v-t-1{
+        margin-top: 100px;
+    }
+    h3{
+        font-size: 1.4rem;        
+    }
     .v-velo{
         margin-top: -40px;        
     }
@@ -680,6 +770,48 @@ a.v-share-wa{
     .v-counter .count span {
         font-size: 1.4rem;
     }    
+
+    figure.size-large{
+        margin: 0px -50px;
+    }
+    .wp-block-image {
+        margin: 0 -25px;
+    }
+
+    .v-2020 a:before{
+        font-size: 6rem;
+        top: -89px;
+        right: 0px;     
+    }
+    .v-2020 a:after{
+        font-size: 1.2rem;
+        left: 50%;
+        top: auto;
+        bottom: -40px;
+        width: 320px;
+        margin-left: -160px;
+    } 
+
+    .v-table{
+        font-size: 0.8rem;
+    }
+    .v-sharing a{
+        font-size: 1.4rem;
+    }
+
+    .wpcf7{
+        margin: 0px -25px;
+    }
+    .wpcf7-form{
+        padding: 50px 0px;
+    }
+
+    .wpcf7-form-control-wrap.your-age{
+        width: 430px;
+    }
+    blockquote.wp-block-quote{
+        font-size: 1.4rem;
+    }
 }
 
 
