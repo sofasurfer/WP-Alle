@@ -72,7 +72,7 @@ h2.v-t{
     font-size: 2.4rem;
     color: #0051D3;
     padding-top: 200px;
-    height: 500px;
+    height: 550px;
     margin: 0px;
 
 }
@@ -200,6 +200,12 @@ footer a{
 .comment-form .alert.alert-info{
     display: none;
 }
+
+
+.wp-block-image figcaption{
+    text-align: right;
+}
+
 
 table{
     color: #0051D3;
