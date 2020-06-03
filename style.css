@@ -5,7 +5,7 @@
  Author:       Sofasurfer
  Author URI:   http://sofasurfer.org
  Template:     wp-bootstrap-starter
- Version:      1.0.3
+ Version:      1.2
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -806,9 +806,7 @@ a.v-share-wa{
         padding: 50px 0px;
     }
 
-    .wpcf7-form-control-wrap.your-age{
-        width: 430px;
-    }
+
     blockquote.wp-block-quote{
         font-size: 1.4rem;
     }
