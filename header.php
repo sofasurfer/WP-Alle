@@ -23,7 +23,7 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 v-left">
                     <div class="v-counter">
                         <span class="month"><?= do_shortcode('[get_mounth]'); ?></span>
                         <div class="count">
@@ -33,7 +33,9 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="v-velo"></div>
+                    <figure class="v-velo">
+                        <img src="<?= get_stylesheet_directory_uri(); ?>/images/velo-signature.png" />
+                    </figure>
                 </div>
                 <div class="c-lang">
                     <?= do_shortcode('[c_post_languages ulclass="c-meta-lang" ]'); ?>

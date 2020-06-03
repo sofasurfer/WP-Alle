@@ -128,7 +128,7 @@ a:hover{
 }
 
 .entry-header{
-    margin-top: -200px;
+    margin-top: -140px;
 }
 
 .fa, .fab{
@@ -408,11 +408,11 @@ li:before{
 
 .v-counter .month{
     color: #FF6C40;
-    font-size: 20rem;
+    font-size: 16rem;
     letter-spacing: -1.2rem;
     display: block;
     margin-left: 1.52rem;
-    margin-top: -8.5rem;
+    margin-top: -6.7rem;
 }
 
 .v-counter .count{
@@ -421,26 +421,26 @@ li:before{
     text-align: center;
     left: 1.2rem;
     top: 1.2rem;
-    padding: 1rem 1rem;
-    width: 309px;
+    padding: 0.5rem 1rem;
+    width: 246px;
     line-height: 1;
     background-color: #0051D3;
 }
 .v-counter .count span{
     display: block;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .v-velo{
     float:right;
-    width: 400px;
-    height: 145px;
-    margin-top: 190px;
-    margin-right: 300px;
-    background-size: 100% 100%;
-    background-image: url('images/bg-velo.png');
+    /*width: 400px;*/
+    height: 120px;
+    margin-top: 145px;
+    margin-right: 180px;
 }
-
+.v-velo img{
+    height: 100%;
+}
 
 blockquote.wp-block-quote{
     color: white;
@@ -542,6 +542,33 @@ a.v-share-wa{
     .wpcf7-form-control-wrap.your-age{
         width: 560px;
     }
+
+    .v-counter .month{
+        font-size: 20rem;
+        margin-top: -8.5rem;
+    }
+    
+    .v-counter .count{
+        width: 309px;
+        padding: 1rem 1rem;
+        top: ;
+    }
+    .v-counter .count span{
+        font-size: 2.4rem;
+    }
+
+    .v-velo{
+        float:right;
+        /*width: 400px;*/
+        height: 141px;
+        margin-top: 190px;
+        margin-right: 300px;
+    }
+
+    .entry-header{
+        margin-top: -200px;
+    }
+
 }
 
 @media only screen and (max-width : 1200px) {
@@ -553,4 +580,73 @@ a.v-share-wa{
         width: 360px;
     }
 
+
+    .v-counter .month{
+        font-size: 14rem;    
+        margin-top: -5.9rem;
+    }
+    
+    .v-counter .count{
+        width: 214px;
+        font-size: 0.84rem;
+    }
+    .v-counter .count span{
+        font-size: 1.9rem;
+    }
+
+
+    .v-velo{
+        height: 100px;
+        margin-top: 135px;
+        margin-right: 80px;
+    }
+    .entry-header {
+        margin-top: -100px;
+    }    
 }
+
+@media only screen and (max-width : 960px) {
+
+    .c-lang,
+    header .col-md-6{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        text-align: center;
+
+    }
+
+    .v-left{
+        text-align: left!important;
+    }
+
+    .c-lang ul{
+        display: inline-block;        
+    }
+
+    .entry-header {
+        margin-top: 100px;
+    }
+
+    .v-counter .month{
+        font-size: 12rem;    
+        margin-top: -5.9rem;
+    }
+
+
+    .v-velo {
+        height: 100px;
+        margin-top: -75px;
+        margin-right: 0px;
+        width:100%;
+    }
+
+}
+
+
+
