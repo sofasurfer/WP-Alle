@@ -825,7 +825,12 @@ a.v-share-wa{
     .v-counter .count span {
         font-size: 1.4rem;
     }    
-
+    .bg-1{
+        top: 40px;
+    }
+    .site-content {
+        margin-top: 100px;
+    }    
     figure.size-large{
         margin: 0px -50px;
     }
