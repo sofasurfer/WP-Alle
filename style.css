@@ -835,7 +835,9 @@ a.v-share-wa{
     .wp-block-image {
         margin: 0 -25px;
     }
-
+    .wp-block-image img{
+        width: 100%;
+    }
     .v-2020 a:before{
         font-size: 6rem;
         top: -89px;
