@@ -653,6 +653,10 @@ a.v-share-wa{
 
 @media only screen and (max-width : 960px) {
 
+    html,body{
+        overflow-x: hidden;
+    }
+
     .c-lang,
     header .col-md-6{
         position: relative;
@@ -692,7 +696,17 @@ a.v-share-wa{
         margin-left: 2.77rem;
     }
 
+    .v-2020 a::before {
+        font-size: 9rem;
+        top: -133px;
+        right: -80px;
 
+    }
+    .v-2020 a::after {
+        padding: 15px 25px;
+        font-size: 1.4rem;
+        left: -80px;
+    }
     .v-velo {
         height: 100px;
         margin-top: -75px;
@@ -700,11 +714,18 @@ a.v-share-wa{
         width:100%;
     }
 
+    .wpcf7{
+         width: 100vw;
+         position: relative;
+         margin-left: -50vw;
+         left: 50%;
+    }
+
     .wpcf7 .float-right{
         float: none!important;
     }
     .btn.btn-primary, .wpcf7-form .btn-primary{
-        margin-right: 0px;
+        margin-right: 50px;
     }
 
 
@@ -719,13 +740,12 @@ a.v-share-wa{
     .v-sharing a{
         display: block;
     }
+
+
 }
 
 @media only screen and (max-width : 500px) {
 
-    html,body{
-        overflow-x: hidden;
-    }
     h1.entry-title{
         font-size: 1.4rem;
     }
@@ -799,12 +819,7 @@ a.v-share-wa{
         font-size: 1.4rem;
     }
 
-    .wpcf7{
-        margin: 0px -25px;
-    }
-    .wpcf7-form{
-        padding: 50px 0px;
-    }
+
 
 
     blockquote.wp-block-quote{
