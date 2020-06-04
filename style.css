@@ -39,7 +39,22 @@ body{
     min-height: 100%;
     margin-bottom: 80px!important;
     font-family: 'Roboto Condensed', sans-serif;
+
+/*    background: url(images/LigneHaut.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */   
 }
+
+.bg-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
 h1{
     font-size: 2.4rem;
     margin:0;

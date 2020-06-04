@@ -20,6 +20,7 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+    <img src="<?= get_stylesheet_directory_uri(); ?>/images/LigneHaut.png" class="bg-1" />
     <header>
         <div class="container-fluid">
             <div class="row">
