@@ -72,7 +72,7 @@ h2.v-t{
     font-size: 2.4rem;
     color: #0051D3;
     padding-top: 200px;
-    height: 500px;
+    height: 550px;
     margin: 0px;
 
 }
@@ -200,6 +200,12 @@ footer a{
 .comment-form .alert.alert-info{
     display: none;
 }
+
+
+.wp-block-image figcaption{
+    text-align: right;
+}
+
 
 table{
     color: #0051D3;
@@ -536,12 +542,11 @@ a.v-share-wa{
     .v-wide,
     .wp-block-columns,
     div.wpcf7,
-    figure.size-large,
     #wpcf7-f9-p2-o1{
         margin: 0px -200px;
     }
 
-    figure.size-large{
+    figure.v-2020.size-large{
         margin: 0px -80px;
     }
 
@@ -555,7 +560,7 @@ a.v-share-wa{
     }
     
     .v-counter .count{
-        width: 309px;
+        width: 311px;
         padding: 1rem 1rem;
         top: ;
     }
