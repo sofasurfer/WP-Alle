@@ -24,7 +24,7 @@ msgstr ""
 
 #: functions.php:70 header.php:31
 msgid "Unterzeichner*innen"
-msgstr ""
+msgstr "Signataires"
 
 #: template-parts/content.php:23
 msgid "Pages:"
