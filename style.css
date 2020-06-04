@@ -55,6 +55,14 @@ body{
     width: 100vw;
 }
 
+.bg-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60vw;
+    z-index: 2;
+}
+
 h1{
     font-size: 2.4rem;
     margin:0;
@@ -144,7 +152,7 @@ a:hover{
 }
 
 .entry-header{
-    margin-top: -140px;
+    margin-top: 0px;
 }
 
 .fa, .fab{
@@ -515,14 +523,14 @@ blockquote.wp-block-quote a:hover{
     cursor: pointer;
 }
 
-.v-2020 a:before{
+/*.v-2020 a:before{
     position: absolute;
     content: "2020";
     font-size: 18rem;
     top: -265px;
     right: -160px;    
     color: #FF6C40;
-}
+}*/
 
 .v-sharing{
     display: flex;
@@ -592,7 +600,7 @@ a.v-share-wa{
     }
 
     .entry-header{
-        margin-top: -200px;
+        margin-top: 0px;
     }
     .v-2020 a:before{
         font-size: 20rem;  
@@ -647,7 +655,7 @@ a.v-share-wa{
         margin-right: 80px;
     }
     .entry-header {
-        margin-top: -100px;
+        margin-top: 0px;
     }
 
 
@@ -696,6 +704,13 @@ a.v-share-wa{
         font-size: 16rem;
     }
 
+    .v-ptop{
+        margin-top: 300px;
+    }
+    .site-content{
+        margin-top: 150px;
+    }
+
     .v-left{
         text-align: left!important;
     }
@@ -707,7 +722,7 @@ a.v-share-wa{
     }
 
     .entry-header {
-        margin-top: 100px;
+        margin-top: 0px;
     }
 
     .v-counter .month{

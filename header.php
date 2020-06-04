@@ -21,19 +21,20 @@
     </head>
     <body <?php body_class(); ?>>
     <img src="<?= get_stylesheet_directory_uri(); ?>/images/LigneHaut.png" class="bg-1" />
+    <img src="<?= get_stylesheet_directory_uri(); ?>/images/LigneBas.png" class="bg-2" />
     <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 v-left">
                     <div class="v-counter">
-                        <span class="month"><?= do_shortcode('[get_mounth]'); ?></span>
+                        <!--span class="month"><?= do_shortcode('[get_mounth]'); ?></span-->
                         <div class="count">
                             <span><?= do_shortcode('[count_subscriptions text="Total: %s"]'); ?></span>
                             <?= __("Unterzeichner*innen",'veloallee'); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 v-ptop">
                     <figure class="v-velo">
                         <img src="<?= get_stylesheet_directory_uri(); ?>/images/velo-signature.png" />
                     </figure>
