@@ -57,10 +57,9 @@ body{
 
 .bg-2{
     position: absolute;
-    bottom: 0;
+    bottom: 900px;
     left: 0;
     width: 60vw;
-    z-index: 2;
 }
 
 h1{
@@ -568,7 +567,9 @@ a.v-share-wa{
     #wpcf7-f9-p2-o1{
         margin: 0px -200px;
     }
-
+    .bg-2{
+        bottom: 500px;
+    }
     figure.v-2020.size-large{
         margin: 0px -80px;
     }
@@ -626,6 +627,10 @@ a.v-share-wa{
 }
 
 @media only screen and (max-width : 1200px) {
+
+    .bg-2{
+        bottom: 1200px;
+    }
 
     .wp-block-columns{
         display: block;
@@ -685,7 +690,6 @@ a.v-share-wa{
         overflow-x: hidden;
     }
 
-    .c-lang,
     header .col-md-6{
         position: relative;
         width: 100%;
@@ -703,7 +707,12 @@ a.v-share-wa{
         top: 0px;
         font-size: 16rem;
     }
-
+    .bg-1{
+        top: 500px;
+    }
+    .bg-2{
+        bottom: 900px;
+    }
     .v-ptop{
         margin-top: 300px;
     }
@@ -714,12 +723,12 @@ a.v-share-wa{
     .v-left{
         text-align: left!important;
     }
-    .c-lang{
+/*    .c-lang{
         right: auto;        
     }
     .c-lang ul{
         display: inline-block;        
-    }
+    }*/
 
     .entry-header {
         margin-top: 0px;
@@ -743,7 +752,7 @@ a.v-share-wa{
         left: -80px;
     }
     .v-velo {
-        height: 100px;
+        height: 200px;
         margin-top: -75px;
         margin-right: 0px;
         width:100%;
@@ -799,7 +808,8 @@ a.v-share-wa{
         font-size: 1.4rem;        
     }
     .v-velo{
-        margin-top: -40px;        
+        margin-top: -40px;   
+        height: 100px;    
     }
     .v-counter .month {
         font-size: 8rem;
@@ -825,11 +835,9 @@ a.v-share-wa{
     .v-counter .count span {
         font-size: 1.4rem;
     }    
-    .bg-1{
-        top: 40px;
-    }
+
     .site-content {
-        margin-top: 100px;
+        margin-top: 50px;
     }    
     figure.size-large{
         margin: 0px -50px;
@@ -864,8 +872,26 @@ a.v-share-wa{
         font-size: 1.4rem;
     }
 
-
-
+    .bg-2{
+        bottom: 900px;
+    }
+    .bg-1{
+        top: 400px;
+    }
+    .v-ptop{
+        margin-top: 200px;
+    }
+    .c-lang{
+        top: 0.3rem;
+    }
+    .c-lang ul li a {
+        font-size: 0.8rem;
+        color: #0051D3;
+        padding: 10px 25px;
+    }
+    .c-lang ul{
+        padding: 4px 0px;
+    }
 
     blockquote.wp-block-quote{
         font-size: 1.4rem;
