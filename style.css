@@ -827,10 +827,11 @@ a.v-share-wa{
     }    
 
     figure.size-large{
-        margin: 0px -50px;
+        margin: 0px -15px;
     }
     .wp-block-image {
         margin: 0 -25px;
+        width: 100%;
     }
 
     .v-2020 a:before{
