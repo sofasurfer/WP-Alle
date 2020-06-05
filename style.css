@@ -896,6 +896,13 @@ a.v-share-wa{
     blockquote.wp-block-quote{
         font-size: 1.4rem;
     }
+
+    .wpcf7-form-control-wrap {
+        display: inline-block;
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
 }
 
 
