@@ -150,6 +150,10 @@ a:hover{
     color: #FF6C40;
 }
 
+ul{
+    margin: 0px;
+    padding: 0px;
+}
 .entry-header{
     margin-top: 0px;
 }
