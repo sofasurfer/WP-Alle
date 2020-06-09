@@ -811,6 +811,11 @@ a.v-share-wa{
     h3{
         font-size: 1.4rem;        
     }
+    table td{
+        line-height: 1rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+    }
     .v-velo{
         margin-top: -40px;   
         height: 100px;    
@@ -877,7 +882,7 @@ a.v-share-wa{
     }
 
     .bg-2{
-        bottom: 900px;
+        bottom: 800px;
     }
     .bg-1{
         top: 400px;
@@ -899,14 +904,25 @@ a.v-share-wa{
 
     blockquote.wp-block-quote{
         font-size: 1.4rem;
+        padding: 50px 50px;
     }
-
     .wpcf7-form-control-wrap {
         display: inline-block;
         margin-left: -25px;
         margin-right: -25px;
     }
 
+    .btn.btn-primary, .wpcf7-form .btn-primary{
+        margin-right: 0px;       
+    }
+    .wpcf7 .float-right{
+        margin-left: -25px;
+    }
+    .wpcf7-form-control-wrap.your-age {
+        width: 100%;
+        margin-left: -100px;
+        margin-right: -100px;
+    }    
 }
 
 
