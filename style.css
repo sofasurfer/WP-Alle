@@ -639,10 +639,6 @@ a.v-share-wa{
     .wp-block-columns{
         display: block;
     }
-    .wpcf7-form-control-wrap.your-age {
-        width: 360px;
-    }
-
 
     .v-counter .month{
         font-size: 14rem;    
@@ -682,7 +678,9 @@ a.v-share-wa{
     } 
 
     .wpcf7-form-control-wrap.your-age{
-        width: auto;
+        width: 100%;
+        padding-right: 55px;
+        padding-left: 10px;
     }
 
 
@@ -917,12 +915,7 @@ a.v-share-wa{
     }
     .wpcf7 .float-right{
         margin-left: -25px;
-    }
-    .wpcf7-form-control-wrap.your-age {
-        width: 100%;
-        margin-left: -100px;
-        margin-right: -100px;
-    }    
+    }   
 }
 
 
